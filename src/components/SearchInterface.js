@@ -9,7 +9,7 @@ import {
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 
 function SearchInterface() {
-  const API_URL = Process.env.REACT_APP_API_URL || 'http://127.0.0:8000';
+  const API_URL = process.env.REACT_APP_API_URL || 'http://127.0.0:8000';
   const [query, setQuery] = useState('');
   const [originalQuery, setOriginalQuery] = useState('');
   const [results, setResults] = useState([]);
