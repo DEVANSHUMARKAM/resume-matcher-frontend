@@ -1,5 +1,3 @@
-// src/components/Dashboard.js
-import React from 'react';
 import {
   Box,
   Typography,
@@ -21,14 +19,14 @@ function Dashboard() {
     transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
     '&:hover': {
       transform: 'scale(1.05)',
-      boxShadow: 6, // Increases shadow depth on hover
+      boxShadow: 6,
     },
   };
 
   return (
     <Box sx={{ textAlign: 'center', my: 4 }}>
       <Typography variant="h3" component="h1" gutterBottom>
-        Project Dashboard
+        My Dashboard
       </Typography>
       <Typography variant="h6" color="text.secondary" sx={{ mb: 5 }}>
         Choose an Information Retrieval method to begin.
@@ -62,7 +60,6 @@ function Dashboard() {
           </Card>
         </Grid>
 
-        {/* Card 2: Tolerant Search */}
         <Grid item xs={12} md={5}>
           <Card sx={cardStyle}>
             <CardContent sx={{ flexGrow: 1 }}>
@@ -95,3 +92,6 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
+//This component is the central "hub" or menu 
+// of your application. The user lands here to choose which search tool they want to use.
