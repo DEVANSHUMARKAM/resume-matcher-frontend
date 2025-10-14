@@ -1,10 +1,7 @@
-// src/App.js
-import React from 'react';
 import { Container, Box } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
 
-// Import all your components
-import Header from './components/Header'; // Import the new Header
+import Header from './components/Header'; 
 import LandingPage from './components/LandingPage';
 import Dashboard from './components/Dashboard';
 import SearchInterface from './components/SearchInterface';
@@ -14,8 +11,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <Header /> {/* Add the Header component here */}
-
+      <Header /> 
       <Container maxWidth="md" sx={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -31,3 +27,6 @@ function App() {
 }
 
 export default App;
+
+//The master assembler, creating the consistent layout and using <Routes> to swap out the 
+//main content depending on the URL.
