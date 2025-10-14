@@ -1,5 +1,3 @@
-// src/components/Header.js
-import React from 'react';
 import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -11,7 +9,7 @@ function Header() {
           <Typography 
             variant="h3" 
             component={RouterLink} // Use RouterLink for navigation
-            to="/" // Link to the home page
+            to="/" 
             sx={{ 
               color: 'white', 
               textDecoration: 'none',
@@ -19,7 +17,7 @@ function Header() {
               letterSpacing: '8px'
             }}
           >
-            THE INTELLIGENT RESUME MATCHER
+            THE RESUME MATCHER
           </Typography>
         </Box>
       </Toolbar>
