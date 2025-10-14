@@ -1,5 +1,3 @@
-// src/components/TolerantSearch.js
-
 import React, { useState } from 'react';
 import axios from 'axios';
 import {
@@ -34,7 +32,6 @@ function TolerantSearch() {
   };
 
   return (
-    // UPDATED: Added width to make the whole section wider
     <Paper elevation={3} sx={{ padding: '2rem', width: '100%', maxWidth: '800px' }}>
 
       <Typography variant="h4" component="h2" gutterBottom align="center">
@@ -63,7 +60,7 @@ function TolerantSearch() {
           onChange={(e) => setQuery(e.target.value)}
           disabled={loading}
           multiline
-          rows={8} // UPDATED: Increased from 4 to 8 for more height
+          rows={8} 
         />
         <Button
           type="submit"
@@ -71,7 +68,7 @@ function TolerantSearch() {
           color="secondary"
           disabled={loading}
           sx={{
-            width: '250px', // UPDATED: Gave the button a larger fixed width
+            width: '250px', 
             padding: '12px 0',
             fontSize: '1rem',
             transition: 'transform 0.2s ease-in-out',
