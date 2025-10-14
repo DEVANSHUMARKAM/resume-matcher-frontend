@@ -1,6 +1,4 @@
-// src/components/SearchInterface.js
-
-import React, { useState } from 'react'; // <--- THIS IS THE CORRECTED LINE
+import { useState } from 'react'; 
 import axios from 'axios';
 import {
   TextField, Button, Box, Typography, CircularProgress,
@@ -9,13 +7,14 @@ import {
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 
 function SearchInterface() {
-  const API_URL = process.env.REACT_APP_API_URL || 'http://127.0.0:8000';
-  const [query, setQuery] = useState('');
-  const [originalQuery, setOriginalQuery] = useState('');
-  const [results, setResults] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [relevantDocs, setRelevantDocs] = useState(new Set());
-
+  const API_URL = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000';
+  const [query, setQuery] = useState(''); // search query ko store krne k liye
+  const [originalQuery, setOriginalQuery] = useState(''); // original query ko store krne k liye
+  const [results, setResults] = useState([]); //resume result ko store krne k liye
+  const [loading, setLoading] = useState(false); //loading state ko manage krne k liye
+  const [relevantDocs, setRelevantDocs] = useState(new Set()); // relevant documents ko track krne k liye
+  
+  // submission handle krta hai , search krne k liye
   const handleSearch = async (e) => {
     e.preventDefault();
     if (!query) return;
@@ -32,6 +31,7 @@ function SearchInterface() {
     setLoading(false);
   };
 
+  // refine krne k liye handle krta hai
   const handleRefineSearch = async () => {
     if (relevantDocs.size === 0) {
       alert('Please mark at least one document as relevant.');
