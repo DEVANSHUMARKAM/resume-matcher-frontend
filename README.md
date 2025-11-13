@@ -8,7 +8,8 @@ This project is a full-stack web application designed to be an advanced Informat
 
 *Include screenshots of your application here. A great set would be:*
 
-* **Landing Page:** `[Your Screenshot of the Landing Page]`
+* **Landing Page:** `<img width="1849" height="929" alt="Screenshot from 2025-11-13 19-06-44" src="https://github.com/user-attachments/assets/a92064f0-169d-483a-ba49-72b122a0c2f2" />
+`
 * **Dashboard:** `[Your Screenshot of the Dashboard]`
 * **Standard Search (with results):** `[Your Screenshot of the Standard Search]`
 * **Tolerant Search (showing a corrected query):** `[Your Screenshot of the Tolerant Search]`
