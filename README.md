@@ -8,11 +8,14 @@ This project is a full-stack web application designed to be an advanced Informat
 
 *Include screenshots of your application here. A great set would be:*
 
-* **Landing Page:** `<img width="1849" height="929" alt="Screenshot from 2025-11-13 19-06-44" src="https://github.com/user-attachments/assets/a92064f0-169d-483a-ba49-72b122a0c2f2" />
-`
-* **Dashboard:** `[Your Screenshot of the Dashboard]`
-* **Standard Search (with results):** `[Your Screenshot of the Standard Search]`
-* **Tolerant Search (showing a corrected query):** `[Your Screenshot of the Tolerant Search]`
+* **Landing Page:** <img width="1849" height="929" alt="Screenshot from 2025-11-13 19-06-44" src="https://github.com/user-attachments/assets/a92064f0-169d-483a-ba49-72b122a0c2f2" />
+
+* **Dashboard:** <img width="1849" height="929" alt="Screenshot from 2025-11-13 19-09-33" src="https://github.com/user-attachments/assets/5602f2f1-f666-4cf9-a7f0-aefdf15d2f59" />
+
+* **Standard Search (with results):** <img width="1849" height="929" alt="Screenshot from 2025-11-13 19-25-43" src="https://github.com/user-attachments/assets/e534ff61-591a-4c85-806a-fb27ee21eedc" />
+
+* **Tolerant Search (showing a corrected query):** <img width="1849" height="929" alt="Screenshot from 2025-11-13 19-26-18" src="https://github.com/user-attachments/assets/2f59d5f9-4b9a-4224-9a42-d9bd5776f77f" />
+
 
 ---
 
@@ -61,8 +64,8 @@ To get a local copy up and running, follow these simple steps.
 
 1.  **Clone the repository:**
     ```sh
-    git clone [Your GitHub Repository URL]
-    cd resume-matcher
+    git clone https://github.com/DEVANSHUMARKAM/resume-matcher-frontend
+    cd resume-matcher-frontend
     ```
 
 2.  **Setup the Backend:**
